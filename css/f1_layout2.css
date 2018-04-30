@@ -1,0 +1,51 @@
+#page_container {
+	width: 770px;
+	margin:0px auto;
+	text-align:left;
+}
+#left_menu {
+	float: left;
+	width: 770px;
+	border-top:#CC9900 4px solid;
+	background-color:#006699;
+}
+#main_content {
+	float: left;
+	width: 520px;
+}
+#sub {
+	float: right;
+	width: 520px;
+	background-color:#6699FF;
+}
+#container {
+	height: 200px;
+}
+#the_menu {
+	float: right;
+	width: 720px;
+	background-color:#6699FF;
+}
+#main_menu{
+	float: left;
+	width:200px;
+}
+#content_right {
+	float: right;
+	width: 520px;
+}
+#header {
+	width:770px;
+	background-color:#006699;
+}
+#main_content{
+	padding:0px;
+	float:left;
+	width: 518px;
+	background-color:#CCCCCC;
+}
+#content_right{
+	padding:0px;
+	width: 520px;
+}
+

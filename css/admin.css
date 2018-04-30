@@ -1,0 +1,615 @@
+/* CSS Document for thewu32_cms admin space
+ * Created by Guy ZINGUI aka Thewu32
+ * 
+ * Creation Date	: 06:02:2008 05:40
+ * Last modified 	: 06:02:2008 05:40
+*/
+
+/* [Default] */
+*{
+	margin : 0;
+	padding : 0;
+	border : 0;
+}
+body{
+	font-size : 80%;
+	font-family : Geneva, tahoma, verdana, arial, helvetica;
+	color : #666;
+	background-color:#CCC;
+}
+a{
+	color : #34384B;
+	text-decoration : underline;
+}
+
+/* [Hierarchies] */
+h1, h2, h3, h4, h5, h6 {
+	font-family : Geneva, tahoma, verdana, arial, helvetica; 
+	margin : 0px; 
+	padding : 0px;
+}
+h1{
+	color : #996600;
+	font-size : 140%;
+	padding : 0; 
+	margin : 10px; 
+	margin-left : 0px;
+}
+h2{
+	color : #996600;
+	font-size : 120%;
+	padding : 0; 
+	margin : 10px; 
+	margin-left : 0px;
+}
+h3{
+	color : #996600;
+	font-size : 100%;
+	padding : 0; 
+	margin : 5px; 
+	margin-left : 0px;
+}
+h4{
+	color : #996600;
+	font-size : 80%;
+	
+	padding : 0; 
+	margin : 5px; 
+	margin-left : 0px;
+}
+p{
+	line-height: 15px;
+	margin: 10px 0px 5px 0px;
+}
+
+ul, ol{
+	margin:10px 0px 5px 15px;
+}
+li{
+	margin: 0px 0px 5px 5px;
+}
+/* [Forms] */
+form{
+	padding-top:2px;
+}
+input {
+	font-size : 100%;
+	border : #996600 solid 1px;
+	padding-left:2px;
+}
+
+.txt{
+	padding : 2px;
+}
+
+select {
+	font-size : 100%;
+	margin : 4px 1px;
+	border : #996600 solid 1px;
+}
+
+option {
+	padding-left : 2px;
+}
+
+textarea {
+	font-size : 110%;
+	margin : 4px 1px; 
+	padding-left : 2px;
+	border : #996600 solid 1px;
+}
+
+/* [Pages global layout] */
+#page{
+	margin : 0 auto;
+	width : 800px;
+	border-left : #394757 solid 1px;
+	border-bottom : #394757 solid 1px;
+	border-right : #394757 solid 1px;
+}
+#page_header{
+	text-align : left;
+}
+#page_top_menu{
+	background-color : #003399;
+	color : #FFF;
+	height : 30px;
+	line-height : 30px;
+	text-align : right;
+}
+#page_top_menu a{
+	color : #FFF;
+	text-decoration:none;
+	font-weight:bold;
+}
+#page_main_menu{
+	text-align : left;
+	background-color : #C0C9D6;
+	height : 25px;
+	line-height : 25px;
+}
+	#page_main_menu a{
+	text-decoration:none;
+	font-weight:bold;
+	text-align : left;
+}
+#page_ban{
+	text-align : left;
+	background-color:#394757;
+	height : 90px;
+}
+#page_content{
+	text-align : left;
+	color : #666;
+	margin : 5px;
+}
+#page_content_left{
+	width : 32%;
+	float : left;
+}
+#page_content_right{
+	width : 68%;
+	float : left;
+}
+#page_footer{
+	text-align : left;
+	background-color : #394757;
+	height : 40px;
+	padding-left:5px;
+	line-height:20px;
+}
+#page_footer a{
+	text-decoration:none;
+	color:#FFF;
+	font-weight:normal;
+}
+
+/* [Classes] */
+.clear_both{
+	clear : both;
+}
+.err_msg{
+	margin : 10px; 
+	color : #993300;
+	font-weight : bold;
+	border : #993300 solid 1px;
+	border-left : #993300 solid 5px;
+	padding :10px;
+}
+.cfrm_msg{
+	margin : 10px; 
+	color : #009933;
+	font-weight : bold;
+	border: #009933 solid 1px;
+	border-left : #009933 solid 1px;
+	padding : 10px;
+}
+.copyright{
+	font-size : 75%;
+	font-style:italic;
+}
+/* [Boxes] */
+.box{
+	margin : 0px 5px 5px 0px;
+	border:#34384B solid 1px;
+}
+.box_head{
+	background:#546A8B;
+	border:#34384B;
+	color:#FFF;
+	font-size:100%;
+	font-family:Tahoma, tahoma, Arial, Helvetica, sans-serif;
+	height:20px;
+	line-height:20px;
+	font-weight : bold;
+	border:#34384B solid 1px;
+	padding-left:5px;
+	letter-spacing:1px;
+}
+.box_content{
+	text-align : left;
+	padding : 5px;
+}
+	.box_content h1{
+		font-size : 140%;
+		font-weight : bold;
+		font-family : Arial, Helvetica, sans-serif;
+		color : #546A8B;
+	}
+	
+	.box_content h2{
+		font-size : 120%;
+		font-weight : bold;
+		font-family : Arial, Helvetica, sans-serif;
+		color : #546A8B;
+	}
+	
+	.box_content h3{
+		font-size : 100%;
+		font-weight : bold;
+		font-family : Arial, Helvetica, sans-serif;
+		color : #546A8B;
+	}
+	
+	.box_content a{
+		font-weight : normal;
+		color : #996600;
+		text-decoration : none;
+	}
+	
+	.box_content .link_base{
+		color : #34384B;
+		text-decoration : underline;
+		font-weight : bold;
+	}
+	
+	
+/* [Scrolling Boxes] */	
+.scrolling_box{
+	margin : 10 0 10 0;
+	border:#34384B solid 1px;
+}
+.scrolling_box_head{
+	background:#546A8B;
+	border:#34384B;
+	color:#FFF;
+	font-size:100%;
+	height:20px;
+	line-height:20px;
+	font-family:Geneva, tahoma, Arial, Helvetica, sans-serif;
+	font-weight : bold;
+	border:#34384B solid 1px;
+	padding-left:5px;
+	letter-spacing:1px;
+	
+}
+.scrolling_box_content{
+	text-align : left;
+	padding : 5px;
+}
+	.scrolling_box_content h1{
+		font-size : 140%;
+		font-weight : bold;
+		font-family : Arial, Helvetica, sans-serif;
+		color : #996600;
+	}
+	
+	.scrolling_box_content h2{
+		font-size : 120%;
+		font-weight : bold;
+		font-family : Arial, Helvetica, sans-serif;
+		color : #996600;
+	}
+	
+	.scrolling_box_content a{
+		font-weight : bold;
+		color : #996600;
+		text-decoration : none;
+	}
+	
+/* [Info boxes] */
+.info_box{
+	margin : 5px 5px 5px 0px;
+	border:#34384B solid 1px;
+	float : left;
+}
+.info_box_head{
+	background:#C0C9D6;
+	border:#34384B;
+	color:#FFF;
+	font-size:120%;
+	font-family:Geneva, tahoma, Arial, Helvetica, sans-serif;
+	padding:5px;
+	font-weight : bold;
+	border:#34384B solid 1px;
+}
+.info_box_content{
+	text-align : left;
+	padding : 5px;
+}
+	.info_box_content h1{
+		font-size : 140%;
+		font-weight : bold;
+		font-family : Arial, Helvetica, sans-serif;
+		color : #996600;
+	}
+	
+	.info_box_content h2{
+		font-size : 120%;
+		font-weight : bold;
+		font-family : Arial, Helvetica, sans-serif;
+		color : #996600;
+	}
+	
+	.info_box_content a{
+		font-weight : bold;
+		color : #996600;
+		text-decoration : none;
+	}
+	
+/**************
+[ CSS Modules ] 
+***************/
+#pxGal{
+	margin : 10 auto;
+	width : 740px;
+}
+#pxGal_thumbs{
+	width : 120px;
+	height : 400px;
+	overflow : auto;
+	border : #999999 solid 1px;
+	float : left;
+	padding : 2px;
+	scrollbar-color:#999;
+}
+#pxGal_main{
+	width : 600px;
+	float : left;
+}
+#pxGal_descr{
+	height : 32px;
+	line-height : 16px;
+	padding : 4px;
+	float : left;
+	width : 592px;
+	margin-left : 10px;
+}
+#pxGal_cat{
+	height : 40px;
+	float : left;
+	font-weight : bold;
+	margin-bottom:10px;
+}
+#pxGal_CatTitle{
+	background-color:#555F82;
+	color:#CCCCCC;
+	font-weight:bold;
+	height : 30px;
+	line-height:30px;
+	font-size:14px;
+	text-align:center;
+}
+.pxGal_thumbs{
+	margin-bottom : 5px;
+	display : block;
+	border : #999999 solid 1px;
+}
+
+.pxGal_wrapper{
+	float:left;
+	margin-left:5px;
+	border:#000 1px solid;
+	margin-bottom : 2px;
+	width:100px;
+}
+.pxGal_element{
+	float:left;	
+}
+.pxGal_elementMenu{
+	background-color:#555F82;
+	font-weight:bold;
+	float:left;
+	width:100px;
+}
+.pxGalImg{
+	height:100px;
+	width:100px;
+}
+
+	.pxGal_elementMenu ul{
+		display:inline;
+		margin:0 auto;
+	}
+	.pxGal_elementMenu li{
+		display:inline;
+		list-style-type:none;
+		margin-right:2px;
+		margin-left:0px;
+	}
+	.pxGal_elementMenu a{
+		text-decoration:none;
+		color:#FFF;
+	}
+
+	
+/*Catalogues de produits*/
+
+.product_thumbs{
+	margin-bottom : 5px;
+	display : block;
+	border : #999999 solid 1px;
+}
+
+.product_wrapper{
+	float:left;
+	margin-left:5px;
+	border:#000 1px solid;
+	margin-bottom : 2px;
+	width:200px;
+}
+.product_element{
+	float:left;	
+}
+.product_price{
+	font-weight:bold;
+	background-color:#FFCC00;
+	padding-left:2px;
+}
+.product_elementMenu{
+	background-color:#555F82;
+	font-weight:bold;
+	float:left;
+	width:100px;
+}
+.productImg{
+	height:100px;
+	width:100px;
+}
+
+	.product_elementMenu ul{
+		display:inline;
+		margin:0 auto;
+	}
+	.product_elementMenu li{
+		display:inline;
+		list-style-type:none;
+		margin-right:2px;
+		margin-left:0px;
+	}
+	.product_elementMenu a{
+		text-decoration:none;
+		color:#FFF;
+	}
+
+/*Admin menu classes*/
+
+/* Les etats*/
+.ADM_table{
+	width : 950px;
+	border-collapse:collapse;
+	margin : 0 auto;
+}
+.ADM_table tr{
+	border:#666666 1px solid;
+}
+.ADM_table tr th{
+	border:#666666 1px solid;
+	font-weight:bold;
+	height:30px;
+	text-align:center;
+	padding:2px;
+	color:#FFF;
+	background-color:#333333;
+}
+.ADM_table tr td{
+	border:#666666 1px solid;
+	padding:2px;
+}
+.ADM_table tr td a{
+	font-weight:bold;
+	text-decoration:none;
+}
+.ADM_row1{
+	cursor:pointer;
+	color:#666666;
+	background-color:#F2F2F2;
+}
+.ADM_row1:hover{
+	color:#000;
+	background-color:#cccccc;
+}
+.ADM_row2{
+	cursor:pointer;
+	color:#666;
+	background-color:#ddd;
+}
+.ADM_row2:hover{
+	color:#000;
+	background-color:#cccccc;
+}
+/* Fin Etats*/
+
+/*Les formulaires*/
+.ADM_form{
+	border-collapse:collapse;
+	margin : 10px;
+}
+.ADM_form tr{
+	
+}
+.ADM_form tr th{
+	font-weight:bold;
+	text-align:right;
+	padding:2px;
+}
+.ADM_form tr td{
+	padding:2px;
+}
+.ADM_radio{
+	border:0;
+}
+/* Fin formulaires*/
+
+.ADM_menu{
+	border : #999999 solid 1px;
+	font-family : verdana, geneva, tahoma, arial;
+	font-size : 100%;
+	width:955px;
+}
+
+.ADM_menu h1{
+	font-weight : bold;
+	color : #FFF;
+	background-color:#555F82;
+	margin:0 auto;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	
+}
+
+.ADM_menu ul{
+	text-indent : 0; 
+	display : block;
+	margin-right : 2px;
+	border-right:#CCCCCC 1px dashed;
+}
+
+.ADM_menu ul h2{
+	display : inline;
+}
+
+.ADM_menu ul li{
+	display : inline;
+	font-size : 80 %;
+}
+
+.ADM_menu ul li a{
+	text-decoration:none;
+	color:#000;
+	font-weight:bold;
+}
+
+.ADM_err_msg{
+	background-image:url(../img/dzine/error_bg.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	font-weight:bold;
+	color:#993300; 
+	border:#993300 1px solid;
+	margin:5px auto;
+	padding:5px;
+	padding-left:32px;
+	height:50px;
+	width:70%;
+}
+.ADM_cfrm_msg{
+	background-image:url(../img/dzine/cfrm_bg.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	font-weight:bold;
+	color:#009933; 
+	border:#009933 1px solid;
+	margin:5px auto;
+	padding:5px;
+	padding-left:32px;
+	height:50px;
+	width:70%;
+}
+
+.redStar{
+	font-weight:bold;
+	color:#993300;
+}
+
+.adm_checkBox{
+	margin:5px;
+}
+label input{
+	margin-right:2px;
+}
+.adm_checkBox label{
+	display:block;
+	margin-bottom:2px;
+}
